@@ -29,7 +29,7 @@ section#telefone{
     background:  url('../imagens/frame-iphone.png') no-repeat;
 }
 iframe#tela{
-    position: absolute;
+    position: relative;
     left: 22px;
     top: 80px;
     width: 268px;
@@ -39,14 +39,16 @@ section#redes{
     text-align: right;
 }
 
-section img{
+section#redes img{
     width: 60px;
     margin: 13px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
-    border: 2px solid rgb(212, 211, 211);
     box-sizing: border-box;    
 }
-section img:hover{
-    margin-left: -10px;
+section#redes img:hover{
+    transform: translate(-10px, -5px);
+    border: 2px solid rgb(212, 211, 211);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.636);
+    transition: transform .1s, border .2s;
 }
